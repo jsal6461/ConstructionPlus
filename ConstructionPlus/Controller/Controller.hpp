@@ -10,13 +10,18 @@
 #define Controller_hpp
 
 #include <iostream>
+#include "../Model/Nodes/Node.hpp"
+#include "../Model/Nodes/LinearNode.h"
 using namespace std;
 
 class Controller
 {
-    
+private:
+    void usingNodes();
 public:
     void start();
 };
 
 #endif /* Controller_hpp */
+
+

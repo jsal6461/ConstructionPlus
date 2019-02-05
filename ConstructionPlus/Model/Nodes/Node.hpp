@@ -12,17 +12,21 @@
 #include <assert.h>
 
 template <class Type>
-Class Node
+class Node
 {
 private:
     Type data;
 public:
-    Node(type data);
+    Node();
+    Node(Type data);
     Type getData();
     void setData(Type data);
 };
 
 //Template definitions
+template <class Type>
+Node<Type> :: Node()
+{}
 
 template <class Type>
 Node<Type> :: Node(Type data)
