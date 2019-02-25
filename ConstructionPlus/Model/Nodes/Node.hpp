@@ -6,9 +6,9 @@
 //  Copyright © 2019 Salinas, Jesus. All rights reserved.
 //
 
-#ifndef Node_h
-#define Node_h
-
+#ifndef Node_hpp
+#define Node_hpp
+//alwyas #include as early and basic as possible.
 #include <assert.h>
 
 template <class Type>
@@ -23,7 +23,8 @@ public:
     void setData(Type data);
 };
 
-//Template definitions
+//template definitions
+
 template <class Type>
 Node<Type> :: Node()
 {}
@@ -34,7 +35,7 @@ Node<Type> :: Node(Type data)
     this->data = data;
 }
 
-template<class Type>
+template <class Type>
 Type Node<Type> :: getData()
 {
     return data;
@@ -45,4 +46,5 @@ void Node<Type> :: setData(Type data)
 {
     this->data = data;
 }
+
 #endif /* Node_h */

@@ -9,11 +9,11 @@
 #ifndef Timer_hpp
 #define Timer_hpp
 
+#include <stdio.h>
+
 #include <time.h>
 #include <assert.h>
 #include <iostream>
-
-#endif /* Timer_hpp */
 
 class Timer
 {
@@ -28,3 +28,4 @@ public:
     long getTimeInMicroseconds();
 };
 
+#endif /* Timer_hpp */
